@@ -22,7 +22,7 @@ def main() -> None:
     args = parse_args()
     application = tg_ext.Application.builder().token(args.token).build()
 
-    handlers.setup_hendlers(application)
+    handlers.setup_handlers(application)
 
     application.run_polling()
 

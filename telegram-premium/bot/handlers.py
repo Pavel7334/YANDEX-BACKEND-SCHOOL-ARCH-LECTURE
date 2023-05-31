@@ -46,7 +46,7 @@ class EchoHandler(BaseHandler):
         await update.message.reply_text(self.messages.echo(update.message.text))
 
 
-def setup_hendlers(application: tg_ext.Application) -> None:
+def setup_handlers(application: tg_ext.Application) -> None:
     application.add_handler(tg_ext.CommandHandler("start", StartHandler()))
     application.add_handler(tg_ext.CommandHandler("help", HelpHandler()))
 
