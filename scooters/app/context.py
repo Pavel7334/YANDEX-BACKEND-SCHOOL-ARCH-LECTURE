@@ -1,4 +1,4 @@
-from  app.utils import secrets
+from app.utils import secrets
 
 
 class AppContext:
